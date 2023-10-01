@@ -1,0 +1,77 @@
+.container {
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.askContainer {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.askItem {
+  min-width: 290px;
+  max-width: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #605e9d;
+  padding: 20px;
+  margin-top: 35px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.AskItemText {
+  font-size: medium;
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.askText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #576a9a;
+  width: max-content;
+  margin-left: 10%;
+  padding: 30px 50px;
+  border-radius: 20px;
+  cursor: default;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: larger;
+  font-weight: 600;
+  color: white;
+  margin-right: 25px;
+}
+
+
+.modalWindow {
+  width: 80vw;
+  height: max-content;
+  min-height: 400px;
+  position: absolute;
+  background-color: beige;
+  z-index: 1;
+  left: 10vw;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancelSvg {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: x-large;
+  cursor: pointer;
+}

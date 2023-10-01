@@ -1,0 +1,132 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #c9ccd4;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.p1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #7a9cf4;
+}
+
+.p2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+}
+
+.buttonContainerPay {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonPay {
+  background-color: #557bee;
+  color: white;
+  font-size: x-large;
+  font-weight: 600;
+  border-radius: 35px;
+  border: none;
+  padding: 30px 100px;
+  cursor: default;
+}
+
+.buttonPay:hover {
+  background-color: #4362be;
+  cursor: pointer;
+}
+
+.p3 {
+  font-size: 25px;
+  font-weight: 800;
+  color: #7a9cf4;
+}
+
+.formContainer {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 25px;
+  padding: 20px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ABAFB9;
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .5vh;
+}
+
+.input {
+  width: 35%;
+  height: 40px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left: 10px;
+  letter-spacing: 0.7px;
+  background-color: #6f6db5;
+  color: white;
+  border: none;
+  font-size: larger;
+  caret-color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.input::-webkit-input-placeholder {
+  color: rgb(204, 204, 204);
+}
+
+.input:hover {
+    color: white;
+}
+.input:focus {
+    outline: none;
+}
+
+.buttonSend {
+  height: 43px;
+  border: none;
+  background-color: #7a9cf4;
+  color: white;
+  font-size: larger;
+  width: 10%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  cursor: pointer;
+}
+
+.buttonNextContainer {
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+.buttonNext {
+    height: 43px;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: #7a9cf4;
+    width: 15%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
