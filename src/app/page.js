@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import styles from "./page.module.css";
 import { BiSearchAlt2 } from "react-icons/bi";
@@ -6,8 +7,16 @@ import fastArrowSvg from '../../public/🦆 icon _fast arrow right_.svg'
 import cloudSvg from "../../public/ОБЛАчко 2.svg"
 import AskContainer from "../components/asks/AskContainer";
 import UserInfo from "../components/userInfo/UserInfo";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+
+  const router = useRouter()
+
+  const searchHandler = () => {
+    router.push("/search")
+  }
+
   return (
     <div className={styles.pageContainer}>
       <div className={styles.searchButtonContainer}>
@@ -18,7 +27,7 @@ export default function Home() {
           src={handSvg}
           className={styles.handIcon}
         ></Image>
-        <div className={styles.searchButtonWrapper}>
+        <div className={styles.searchButtonWrapper} onClick={searchHandler}>
           <BiSearchAlt2 className={styles.searchIcon} />
           <button className={styles.searchButton}>Найти человека</button>
         </div>

@@ -4,8 +4,24 @@ import styles from "./searchSlides.module.css";
 import plusSvg from "../../../public/AddNew.svg";
 import { useState } from "react";
 
+const initialValues = {
+  name: "defaultValue",
+  surname: "defaultValue",
+  fatherName: "defaultValue",
+  age: "defaultValue",
+  contractDate: "defaultValue",
+  locateCall: "defaultValue",
+  soldatId: "defaultValue",
+  stateNumber: "defaultValue",
+  callSign: "defaultValue",
+  specialSigns: "defaultValue",
+};
+
+const initialState = { values: initialValues };
+
 const FirstSlide = ({ setSlideNumber }) => {
-  const [state, setState] = useState();
+  const [state, setState] = useState(initialState);
+  const { values } = state;
 
   const changeValueHandler = ({ target }) => {
     setState((prev) => ({
@@ -92,7 +108,7 @@ const FirstSlide = ({ setSlideNumber }) => {
               className={styles.input}
               placeholder="Личный номер"
               onChange={changeValueHandler}
-              name="ID"
+              name="soldatId"
               type="text"
             ></input>
           </li>
@@ -128,6 +144,11 @@ const FirstSlide = ({ setSlideNumber }) => {
           <button
             className={styles.buttonNext}
             onClick={() => {
+              values.name == "defaultValue" ||
+              values.surname == "defaultValue" ||
+              values.fatherName == "defaultValue"
+                ? alert("Не введен минимальный набор данных для поиска")
+                : localStorage.setItem("searchData", JSON.stringify(values));
               setSlideNumber(1);
             }}
           >

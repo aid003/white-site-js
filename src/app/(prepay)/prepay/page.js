@@ -2,12 +2,21 @@
 import styles from "./prepay.module.css";
 import { useState } from "react";
 
-
 const Page = () => {
   const [currentEmail, setCurrentEmail] = useState("");
 
   const sendHandler = () => {
-    // fetch<InitialData>("", { email: currentEmail });
+    const searchData = localStorage.getItem("searchData");
+    fetch(`${process.env.NEXT_PUBLIC_BASE_SERVER_PATH}create-search/`, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json;charset=UTF-8",
+      },
+      body: JSON.stringify({
+        email: currentEmail,
+        searchData: searchData,
+      }),
+    });
   };
 
   return (
@@ -19,7 +28,7 @@ const Page = () => {
           className={styles.buttonPay}
           onClick={() => {
             currentEmail
-              ? ""
+              ? sendHandler()
               : alert(
                   "Введите Ваш email(почту) на которую прийдет ответ о проделанный работе и результаты поиска"
                 );
@@ -49,7 +58,7 @@ const Page = () => {
             className={styles.buttonNext}
             onClick={() => {
               currentEmail
-                ? ""
+                ? sendHandler()
                 : alert(
                     "Введите Ваш email(почту) на которую прийдет ответ о проделанный работе и результаты поиска"
                   );
