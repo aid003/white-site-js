@@ -22,7 +22,7 @@ const Search = () => {
         <FirstSlide setSlideNumber={setSlideNumber}></FirstSlide>
       )}
       <div className={styles.clockContainer}>
-        <Image alt="" width={600} height={600} src={clockSvg}></Image>
+        <Image alt="" width={400} height={600} src={clockSvg}></Image>
       </div>
       <div className={styles.textAlert}>
         <p className={styles.alert}>

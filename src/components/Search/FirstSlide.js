@@ -45,7 +45,15 @@ const FirstSlide = ({ setSlideNumber }) => {
             src={plusSvg}
           ></Image>
         </div>
-        <button className={styles.buttonLoad}>Загрузить</button>
+        <label className={styles.inputFile}>
+          <input
+            type="file"
+            name="file[]"
+            multiple
+            className={styles.buttonLoad}
+          ></input>
+          <span>Выберите файл</span>
+        </label>
       </div>
       <div className={styles.rightContainer}>
         <ul className={styles.inputContainer}>

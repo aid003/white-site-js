@@ -54,7 +54,6 @@
   border-radius: 20px;
 }
 
-
 @keyframes move-hand {
   from {
     margin-left: 15%;
@@ -85,7 +84,7 @@
   color: white;
   font-size: larger;
   word-wrap: break-word;
-  cursor:default;
+  cursor: default;
   text-align: center;
   letter-spacing: 1.2px;
   line-height: 1.5;
@@ -96,7 +95,7 @@
   color: white;
   font-size: larger;
   word-wrap: break-word;
-  cursor:default;
+  cursor: default;
   text-align: center;
   letter-spacing: 1.2px;
   line-height: 1.5;
@@ -125,10 +124,174 @@
 
 .cloudText {
   width: 30%;
-  font-size: 55px;
+  font-size: 6vw;
   font-weight: 600;
   color: white;
   position: absolute;
   text-align: center;
   line-height: 90px;
 }
+
+@media (max-width: 1400px) {
+  @keyframes move-hand {
+    from {
+      margin-left: 10%;
+    }
+
+    to {
+      margin-left: 30%;
+    }
+  }
+
+  .handIcon {
+    width: 250px;
+  }
+}
+
+@media (max-width: 950px) {
+  @keyframes move-hand {
+    from {
+      margin-left: 5%;
+    }
+
+    to {
+      margin-left: 25%;
+    }
+  }
+
+  .handIcon {
+    width: 200px;
+  }
+
+  .searchButtonWrapper {
+    margin-left: 55%;
+  }
+}
+
+@media (max-width: 750px) {
+  @keyframes move-hand {
+    from {
+      margin-left: 5%;
+    }
+
+    to {
+      margin-left: 20%;
+    }
+  }
+
+  .handIcon {
+    width: 160px;
+  }
+
+  .searchButtonWrapper {
+    margin-left: 51%;
+  }
+
+  .cloudText {
+    font-size: 4vw;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 670px) {
+  @keyframes move-hand {
+    from {
+      margin-left: 5%;
+    }
+
+    to {
+      margin-left: 20%;
+    }
+  }
+
+  .handIcon {
+    width: 140px;
+  }
+
+  .searchButtonWrapper {
+    margin-left: 51%;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .searchButton {
+    font-size: large;
+  }
+}
+
+@media (max-width: 510px) {
+  @keyframes move-hand {
+    from {
+      margin-left: 5%;
+    }
+
+    to {
+      margin-left: 22%;
+    }
+  }
+
+  .handIcon {
+    width: 110px;
+  }
+
+  .searchButtonWrapper {
+    margin-left: 51%;
+    padding: 5px 8px 5px 8px;
+    top: 12vh;
+  }
+
+  .searchButton {
+    font-size: large;
+  }
+}
+
+@media (max-width: 420px) {
+  @keyframes move-hand {
+    from {
+      margin-left: 3%;
+    }
+
+    to {
+      margin-left: 18%;
+    }
+  }
+
+  .handIcon {
+    width: 90px;
+  }
+
+  .searchButtonWrapper {
+    margin-left: 51%;
+    padding: 4px 6px 4px 6px;
+    top: 12vh;
+  }
+
+  .searchButton {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 300px) {
+  @keyframes move-hand {
+    from {
+      margin-left: 3%;
+    }
+
+    to {
+      margin-left: 12%;
+    }
+  }
+
+  .handIcon {
+    width: 80px;
+  }
+
+  .searchButtonWrapper {
+    margin-left: 51%;
+    padding: 4px 6px 4px 6px;
+    top: 12vh;
+  }
+
+  .searchButton {
+    font-size: medium;
+  }
+} 

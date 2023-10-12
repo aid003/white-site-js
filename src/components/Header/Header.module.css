@@ -38,3 +38,20 @@
 .itemContainerSvg:hover {
     cursor: pointer;
 }
+
+@media (max-width: 700px) {
+  .listContainer {
+    padding: 5px 10px 5px 10px;
+  }
+
+  .textItemContainer {
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 500px) {
+  .textItemContainer {
+    width: 70%;
+    margin-left: 10%;
+  }
+}

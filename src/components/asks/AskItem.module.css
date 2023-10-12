@@ -75,3 +75,17 @@
   font-size: x-large;
   cursor: pointer;
 }
+
+@media (max-width: 600px) {
+  .askContainer {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .askText {
+    padding: 5% 8%;
+    max-width: 90vw;
+  }
+
+}

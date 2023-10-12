@@ -38,3 +38,9 @@
     line-height: 1.6;
     margin-top: 80px;
 }
+
+@media (max-width: 650px ) {
+  .clockContainer {
+    width: 300px;
+  }
+}
