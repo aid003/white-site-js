@@ -23,6 +23,19 @@ const FirstSlide = ({ setSlideNumber }) => {
   const [state, setState] = useState(initialState);
   const { values } = state;
 
+  const nextHandler = () => {
+    if (
+      values.name == "defaultValue" ||
+      values.surname == "defaultValue" ||
+      values.fatherName == "defaultValue"
+    ) {
+      alert("Не введен минимальный набор данных для поиска");
+      return;
+    }
+    localStorage.setItem("searchData", JSON.stringify(values));
+    setSlideNumber(1);
+  };
+
   const changeValueHandler = ({ target }) => {
     setState((prev) => ({
       ...prev,
@@ -149,17 +162,7 @@ const FirstSlide = ({ setSlideNumber }) => {
           </li>
         </ul>
         <div className={styles.buttonContainerNext}>
-          <button
-            className={styles.buttonNext}
-            onClick={() => {
-              values.name == "defaultValue" ||
-              values.surname == "defaultValue" ||
-              values.fatherName == "defaultValue"
-                ? alert("Не введен минимальный набор данных для поиска")
-                : localStorage.setItem("searchData", JSON.stringify(values));
-              setSlideNumber(1);
-            }}
-          >
+          <button className={styles.buttonNext} onClick={nextHandler}>
             Далее
           </button>
         </div>

@@ -43,4 +43,8 @@
   .clockContainer {
     width: 300px;
   }
+
+  .alert {
+    font-size: 10vw;
+  }
 }

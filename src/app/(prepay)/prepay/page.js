@@ -1,9 +1,11 @@
 "use client";
+import { useRouter } from "next/navigation";
 import styles from "./prepay.module.css";
 import { useState } from "react";
 
 const Page = () => {
   const [currentEmail, setCurrentEmail] = useState("");
+  const router = useRouter();
 
   const sendHandler = () => {
     const searchData = localStorage.getItem("searchData");
@@ -16,6 +18,8 @@ const Page = () => {
         email: currentEmail,
         searchData: searchData,
       }),
+    }).then(() => {
+      router.push("/");
     });
   };
 
@@ -49,9 +53,9 @@ const Page = () => {
             }}
             placeholder="alexnadrova.ol@mail.ru"
           ></input>
-          <button className={styles.buttonSend} onClick={sendHandler}>
+          {/* <button className={styles.buttonSend} onClick={sendHandler}>
             Отправить
-          </button>
+          </button> */}
         </div>
         <div className={styles.buttonNextContainer}>
           <button

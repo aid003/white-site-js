@@ -73,8 +73,7 @@
 .input {
   width: 35%;
   height: 40px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-radius: 20px;
   padding-left: 10px;
   letter-spacing: 0.7px;
   background-color: #6f6db5;
