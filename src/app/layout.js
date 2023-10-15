@@ -16,6 +16,10 @@ export default function RootLayout({ children }) {
     <html lang="ru">
       <head>
         <meta
+          http-equiv="Content-Security-Policy"
+          content="upgrade-insecure-requests"
+        ></meta>
+        <meta
           name="anypay-verification"
           content="fd2cb73c49ecd7bde4795892bdee"
         />
