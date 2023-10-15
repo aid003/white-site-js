@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="ru">
       <head>
         <meta
-          http-equiv="Content-Security-Policy"
+          httpEquiv="Content-Security-Policy"
           content="upgrade-insecure-requests"
         ></meta>
         <meta
