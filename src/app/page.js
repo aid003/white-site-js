@@ -65,7 +65,10 @@ export default function Home() {
         <p className={styles.cloudText}>Правильно заполни информацию !</p>
       </div>
       <UserInfo></UserInfo>
-      <p style={{height: "300px"}}></p>
+      <p style={{ height: "300px" }}></p>
+      <a href="https://aaio.io/" target="_blank">
+        <Image src="https://aaio.io/assets/svg/banners/mini/white-1.svg" title="Aaio - Сервис по приему онлайн платежей" alt="" />
+      </a>
     </div>
   );
 }
