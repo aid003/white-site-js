@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "crypto": "^1.0.1",
+    "locutus": "^2.0.16",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "sha256": "^0.2.0"
   },
   "devDependencies": {
     "@types/node": "20.8.0",

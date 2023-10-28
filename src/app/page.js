@@ -66,9 +66,9 @@ export default function Home() {
       </div>
       <UserInfo></UserInfo>
       <p style={{ height: "300px" }}></p>
-      <a href="https://aaio.io/" target="_blank">
+      {/* <a href="https://aaio.io/" target="_blank">
         <Image src="https://aaio.io/assets/svg/banners/mini/white-1.svg" title="Aaio - Сервис по приему онлайн платежей" alt="" />
-      </a>
+      </a> */}
     </div>
   );
 }

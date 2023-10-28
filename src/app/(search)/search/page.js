@@ -11,6 +11,8 @@ const Search = () => {
 
   const router = useRouter();
 
+  
+
   if (slideNumber === 1) {
     router.push("/prepay");
   }
