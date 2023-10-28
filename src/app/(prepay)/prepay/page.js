@@ -13,7 +13,7 @@ const Page = () => {
   
   let data = {
     merchant_id: process.env.NEXT_PUBLIC_MERCHANT_ID,
-    amount: 30.0,
+    amount: 200.0,
     currency: "RUB",
     email: currentEmail,
     secret: process.env.NEXT_PUBLIC_SECRET_1,
