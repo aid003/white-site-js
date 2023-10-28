@@ -6,7 +6,6 @@ import { useState } from "react";
 
 const Page = () => {
   const [currentEmail, setCurrentEmail] = useState("");
-  const [orderId, setOrderId] = useState("");
 
   const router = useRouter();
 
@@ -16,15 +15,11 @@ const Page = () => {
     currency: "RUB",
     email: currentEmail,
     secret: process.env.NEXT_PUBLIC_SECRET_1,
-    order_id: orderId,
+    order_id: "",
     sign: "",
     desc: "Order Payment",
     lang: "ru",
   };
-
-  data.sign = sha256(
-    `${data.merchant_id}:${data.amount}:${data.currency}:${data.secret}:${data.order_id}`
-  );
 
   const sendHandler = async () => {
     const searchData = localStorage.getItem("searchData");
@@ -39,13 +34,21 @@ const Page = () => {
       }),
     })
       .then((response) => response.json())
-      .then((data) => {
-        setOrderId(data.orderId);
-      })
-      .then(() => {
-        const str = "https://aaio.io/merchant/pay?" + new URLSearchParams(data);
-        router.push(str);
+      .then((date) => {
+        data.order_id = String(date.orderId);
       });
+
+    if (data.order_id) {
+      data.sign = sha256(
+        `${data.merchant_id}:${data.amount}:${data.currency}:${data.secret}:${data.order_id}`
+      );
+      const str = "https://aaio.io/merchant/pay?" + new URLSearchParams(data);
+      router.push(str);
+    } else {
+      alert(
+        "Что-то пошло не так! Отлючите vpn или измените настройки браузераю"
+      );
+    }
   };
 
   return (
