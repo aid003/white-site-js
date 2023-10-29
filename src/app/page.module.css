@@ -375,4 +375,28 @@
   }
 }
 
+@media (max-height: 470px) {
+  .searchButtonWrapper {
+    margin-top: 17vh ;
+  }
+}
+
+@media (max-height: 450px) {
+  .searchButtonWrapper {
+    margin-top: 18vh ;
+  }
+}
+
+@media (max-height: 420px) {
+  .searchButtonWrapper {
+    margin-top: 20vh ;
+  }
+}
+
+@media (max-height: 340px) {
+  .searchButtonWrapper {
+    margin-top: 23vh ;
+  }
+}
+
 
