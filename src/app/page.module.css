@@ -273,7 +273,6 @@
   .textContainer {
     padding: 5px 15px;
   }
-
 }
 
 @media (max-width: 370px) {
@@ -304,7 +303,6 @@
   .textContainer {
     padding: 5px 15px;
   }
-
 }
 
 @media (max-width: 300px) {
@@ -335,68 +333,66 @@
 
 @media (max-height: 1180px) {
   .searchButtonWrapper {
-    margin-top: 2vh ;
+    margin-top: 2vh;
   }
 }
 
 @media (max-height: 950px) {
   .searchButtonWrapper {
-    margin-top: 5vh ;
+    margin-top: 5vh;
   }
 }
 
 @media (max-height: 800px) {
   .searchButtonWrapper {
-    margin-top: 7vh ;
+    margin-top: 7vh;
   }
 }
 
 @media (max-height: 700px) {
   .searchButtonWrapper {
-    margin-top: 10vh ;
+    margin-top: 10vh;
   }
 }
 
 @media (max-height: 600px) {
   .searchButtonWrapper {
-    margin-top: 12vh ;
+    margin-top: 12vh;
   }
 }
 
 @media (max-height: 550px) {
   .searchButtonWrapper {
-    margin-top: 14vh ;
+    margin-top: 14vh;
   }
 }
 
 @media (max-height: 490px) {
   .searchButtonWrapper {
-    margin-top: 16vh ;
+    margin-top: 16vh;
   }
 }
 
 @media (max-height: 470px) {
   .searchButtonWrapper {
-    margin-top: 17vh ;
+    margin-top: 17vh;
   }
 }
 
 @media (max-height: 450px) {
   .searchButtonWrapper {
-    margin-top: 18vh ;
+    margin-top: 18vh;
   }
 }
 
 @media (max-height: 420px) {
   .searchButtonWrapper {
-    margin-top: 20vh ;
+    margin-top: 20vh;
   }
 }
 
 @media (max-height: 340px) {
   .searchButtonWrapper {
-    margin-top: 23vh ;
+    margin-top: 23vh;
   }
 }
-
-
