@@ -177,15 +177,21 @@
 }
 
 @media (max-width: 500px) {
+
+  .container {
+    width: 95%;
+  }
+
   .leftContainer {
     width: 100%;
   }
 
   .input {
-    width: 30vw;
+    width: 35vw;
   }
 
   .rightContainer {
     width: 100%;
   }
+
 }

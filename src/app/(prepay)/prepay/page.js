@@ -11,7 +11,7 @@ const Page = () => {
 
   let data = {
     merchant_id: process.env.NEXT_PUBLIC_MERCHANT_ID,
-    amount: 200.0,
+    amount: 100.0,
     currency: "RUB",
     email: currentEmail,
     secret: process.env.NEXT_PUBLIC_SECRET_1,
@@ -46,7 +46,7 @@ const Page = () => {
       router.push(str);
     } else {
       alert(
-        "Что-то пошло не так! Отлючите vpn или измените настройки браузераю"
+        "Что-то пошло не так! Отлючите vpn или измените настройки браузера."
       );
     }
   };
@@ -85,20 +85,18 @@ const Page = () => {
           ></input>
         </div>
         <div className={styles.buttonNextContainer}>
-          <div>
-            <button
-              className={styles.buttonPay}
-              onClick={() => {
-                currentEmail
-                  ? sendHandler()
-                  : alert(
-                      "Введите Ваш email(почту) на которую прийдет ответ о проделанный работе и результаты поиска"
-                    );
-              }}
-            >
-              Оплатить
-            </button>
-          </div>
+          <button
+            className={styles.buttonNext}
+            onClick={() => {
+              currentEmail
+                ? sendHandler()
+                : alert(
+                    "Введите Ваш email(почту) на которую прийдет отчет о проделанный работе и результаты поиска"
+                  );
+            }}
+          >
+            Оплатить
+          </button>
         </div>
       </div>
     </div>

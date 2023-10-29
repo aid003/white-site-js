@@ -52,7 +52,7 @@ export default function Home() {
       </div>
       <AskContainer></AskContainer>
       <div className={styles.mouthenContainer}>
-        <Image alt="" width={320} height={430} src={fastArrowSvg} />
+        <Image alt="arrow" width={320} height={430} src={fastArrowSvg} />
       </div>
       <div className={styles.cloudContainer}>
         <Image

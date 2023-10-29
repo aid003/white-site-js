@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+  padding: 0px 10px;
 }
 
 .p1 {
@@ -119,13 +120,39 @@
 }
 
 .buttonNext {
-    height: 43px;
+    padding: 10px 30px;
     font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     background-color: #7a9cf4;
-    width: 15%;
     border: none;
     border-radius: 20px;
+    text-align: center;
     cursor: pointer;
+}
+
+
+@media (max-width: 1000px) {
+  .input {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .input {
+    width: 70vw;
+  }
+}
+
+
+@media (max-width: 350px) {
+  .input {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .input {
+    width: 85vw;
+  }
 }
