@@ -17,7 +17,7 @@ const UserInfo = () => {
         <div className={styles.iconContainer}>
           <Image
             className={styles.icon}
-            width={300}
+            width={200}
             height={400}
             alt=""
             src={userSvg}

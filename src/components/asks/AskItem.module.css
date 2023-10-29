@@ -52,7 +52,6 @@
   margin-right: 25px;
 }
 
-
 .modalWindow {
   width: 80vw;
   height: max-content;
@@ -76,6 +75,26 @@
   cursor: pointer;
 }
 
+@media (max-width: 835px) {
+
+  .askContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .askItem {
+    min-width: 80%;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .modalWindow {
+    left: 8vw;
+  }
+}
+
 @media (max-width: 600px) {
   .askContainer {
     width: 100%;
@@ -88,11 +107,14 @@
     max-width: 90vw;
   }
 
+  .modalWindow {
+    left: 6vw;
+    min-height: 300px;
+  }
 }
 
 @media (max-width: 420px) {
   .askText {
     width: 70vw;
   }
-
 }

@@ -27,6 +27,7 @@
 .itemContainer {
   font-size: larger;
   font-weight: 600;
+  margin: 4px 4px;
   color: rgb(223, 223, 223);
 }
 
@@ -45,7 +46,8 @@
   }
 
   .textItemContainer {
-    margin-left: 15%;
+    width: max-content;
+    margin-left: 14%;
   }
 }
 
@@ -55,3 +57,32 @@
     margin-left: 10%;
   }
 }
+
+@media (max-width: 450px) {
+  .listContainer {
+    justify-content: space-around;
+  }
+
+  .textItemContainer {
+    width: 90%;
+    margin-left: 7%;
+  }
+} 
+
+@media (max-width: 360px) {
+  .itemContainer {
+    font-size: medium;
+  }
+} 
+
+@media (max-width: 300px) {
+  .itemContainer {
+    font-size: small;
+  }
+} 
+
+@media (max-width: 200px) {
+  .itemContainer {
+    font-size: 11px;
+  }
+} 

@@ -145,7 +145,7 @@ const FirstSlide = ({ setSlideNumber }) => {
           <li className={styles.inputItem}>
             <input
               className={styles.input}
-              placeholder="Позывной (необязательно)"
+              placeholder="Воинское звание"
               onChange={changeValueHandler}
               name="callSign"
               type="text"

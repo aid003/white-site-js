@@ -133,8 +133,40 @@
     }
 }
 
+@media (max-width: 470px) {
+    .input {
+      width: 35vw;
+      min-height: 55px;
+      height: max-content;
+      padding: 3px;
+    }
+
+    .iconContainer {
+      width: 80%;
+    }
+}
+
 @media (max-width: 450px) {
     .buttonContainer {
         padding: 10px 20px;
     }
+
+    .iconContainer {
+      width: 90%;
+    } 
 }
+
+@media (max-width: 350px) {
+    .input {
+      width: 36vw;
+      min-height: 55px;
+      height: max-content;
+      padding: 3px;
+    }
+
+    .text {
+      font-size: 13px;
+    }
+}
+
+
