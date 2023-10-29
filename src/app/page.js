@@ -1,21 +1,20 @@
-"use client"
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import { BiSearchAlt2 } from "react-icons/bi";
 import handSvg from "../../public/🦆 icon _open select hand gesture_.svg";
-import fastArrowSvg from '../../public/🦆 icon _fast arrow right_.svg'
-import cloudSvg from "../../public/ОБЛАчко 2.svg"
+import fastArrowSvg from "../../public/🦆 icon _fast arrow right_.svg";
+import cloudSvg from "../../public/ОБЛАчко 2.svg";
 import AskContainer from "../components/asks/AskContainer";
 import UserInfo from "../components/userInfo/UserInfo";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
-
-  const router = useRouter()
+  const router = useRouter();
 
   const searchHandler = () => {
-    router.push("/search")
-  }
+    router.push("/search");
+  };
 
   return (
     <div className={styles.pageContainer}>
@@ -66,9 +65,6 @@ export default function Home() {
       </div>
       <UserInfo></UserInfo>
       <p style={{ height: "300px" }}></p>
-      {/* <a href="https://aaio.io/" target="_blank">
-        <Image src="https://aaio.io/assets/svg/banners/mini/white-1.svg" title="Aaio - Сервис по приему онлайн платежей" alt="" />
-      </a> */}
     </div>
   );
 }

@@ -15,14 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru">
       <head>
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="upgrade-insecure-requests"
-        ></meta>
-        <meta
-          name="anypay-verification"
-          content="fd2cb73c49ecd7bde4795892bdee"
-        />
+        <link rel="icon" href="/favicon.ico" sizes="32px" />
       </head>
       <body className={inter.className}>
         <HeaderDesktop></HeaderDesktop>
