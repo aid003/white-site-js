@@ -11,7 +11,7 @@ const Page = () => {
 
   let data = {
     merchant_id: process.env.NEXT_PUBLIC_MERCHANT_ID,
-    amount: 300.0,
+    amount: 299.0,
     currency: "RUB",
     email: currentEmail,
     secret: process.env.NEXT_PUBLIC_SECRET_1,
@@ -60,11 +60,11 @@ const Page = () => {
           <button
             className={styles.buttonPay}
             onClick={() => {
-              // currentEmail
-              //   ? sendHandler()
-              //   : alert(
-              //       "Введите Ваш email(почту) на которую прийдет ответ о проделанный работе и результаты поиска"
-              //     );
+              currentEmail
+                ? sendHandler()
+                : alert(
+                    "Введите Ваш email(почту) на которую прийдет ответ о проделанный работе и результаты поиска"
+                  );
             }}
           >
             Оплатить
@@ -88,11 +88,11 @@ const Page = () => {
           <button
             className={styles.buttonNext}
             onClick={() => {
-              // currentEmail
-              //   ? sendHandler()
-              //   : alert(
-              //       "Введите Ваш email(почту) на которую прийдет отчет о проделанный работе и результаты поиска"
-              //     );
+              currentEmail
+                ? sendHandler()
+                : alert(
+                    "Введите Ваш email(почту) на которую прийдет отчет о проделанный работе и результаты поиска"
+                  );
             }}
           >
             Оплатить
