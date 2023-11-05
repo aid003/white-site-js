@@ -60,11 +60,11 @@ const Page = () => {
           <button
             className={styles.buttonPay}
             onClick={() => {
-              currentEmail
-                ? sendHandler()
-                : alert(
-                    "Введите Ваш email(почту) на которую прийдет ответ о проделанный работе и результаты поиска"
-                  );
+              // currentEmail
+              //   ? sendHandler()
+              //   : alert(
+              //       "Введите Ваш email(почту) на которую прийдет ответ о проделанный работе и результаты поиска"
+              //     );
             }}
           >
             Оплатить
@@ -88,11 +88,11 @@ const Page = () => {
           <button
             className={styles.buttonNext}
             onClick={() => {
-              currentEmail
-                ? sendHandler()
-                : alert(
-                    "Введите Ваш email(почту) на которую прийдет отчет о проделанный работе и результаты поиска"
-                  );
+              // currentEmail
+              //   ? sendHandler()
+              //   : alert(
+              //       "Введите Ваш email(почту) на которую прийдет отчет о проделанный работе и результаты поиска"
+              //     );
             }}
           >
             Оплатить
