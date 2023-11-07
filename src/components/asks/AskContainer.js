@@ -28,7 +28,13 @@ const AskContainer = () => {
           }}
         >
           <ImCancelCircle className={styles.cancelSvg} />
-          <p>efefe</p>
+          <p className={styles.textDecoration}>
+            Самый часто задаваемый вопрос, который нам приходится слышать! Это
+            не имеет особой важности, действительно важно то, что мы имеем
+            доступ к Базе регистрации ведомства самого большого Южного города,
+            что несомненно отвечает на вопрос откуда мы мы владеем данной
+            информацией.
+          </p>
         </div>
       ) : (
         ""
@@ -42,7 +48,11 @@ const AskContainer = () => {
           }}
         >
           <ImCancelCircle className={styles.cancelSvg} />
-          <p>efefe</p>
+          <p className={styles.textDecoration}>
+            Никто не заставляет вас нам доверять! Мы делаем это исключительно из
+            за неравнодушия к происходящему вокруг! Делаем доступным то, что от
+            нас скрывают и врут нам каждый раз.
+          </p>
         </div>
       ) : (
         ""
@@ -55,7 +65,12 @@ const AskContainer = () => {
           }}
         >
           <ImCancelCircle className={styles.cancelSvg} />
-          <p>efefe</p>
+          <p className={styles.textDecoration}>
+            Мы не берём плату за поиск самой информации, мы берем плату за
+            поддержку работы наших серверов, что помогает большему количеству
+            людей воспользоваться нашим благотворительным сервисом поиска
+            информации о человеке!
+          </p>
         </div>
       ) : (
         ""
@@ -68,7 +83,12 @@ const AskContainer = () => {
           }}
         >
           <ImCancelCircle className={styles.cancelSvg} />
-          <p>efefe</p>
+          <p className={styles.textDecoration}>
+            Нет наиболее точного ответа на данный вопрос, так как всё зависит от
+            сложности полученных данных! *загруженной фотографии; *совпадения
+            имён; *совпадения фамилии; *совпадения даты рождения; *совпадения
+            общих сведений.
+          </p>
         </div>
       ) : (
         ""
@@ -81,7 +101,10 @@ const AskContainer = () => {
           }}
         >
           <ImCancelCircle className={styles.cancelSvg} />
-          <p>efefe</p>
+          <p className={styles.textDecoration}>
+            (Данные приходят в формате PDF / DOC / TXT файла) всё зависит от
+            структуры и наполненности данных !
+          </p>
         </div>
       ) : (
         ""
@@ -94,7 +117,11 @@ const AskContainer = () => {
           }}
         >
           <ImCancelCircle className={styles.cancelSvg} />
-          <p>efefe</p>
+          <p className={styles.textDecoration}>
+            Данные приходят на указанную вами почту, поэтому перепроверьте ее
+            несколько раз! Вся информация не поддается огласке и носит строго
+            конфиденциальный характер!
+          </p>
         </div>
       ) : (
         ""
@@ -107,7 +134,11 @@ const AskContainer = () => {
           }}
         >
           <ImCancelCircle className={styles.cancelSvg} />
-          <p>efefe</p>
+          <p className={styles.textDecoration}>
+            Данный вопрос является самым скептическим, исходя из анализа
+            данных! Данные являются собственностью МО и РФ, и формируются в
+            зависимости от формата указанного вами запроса!
+          </p>
         </div>
       ) : (
         ""
@@ -120,7 +151,11 @@ const AskContainer = () => {
           }}
         >
           <ImCancelCircle className={styles.cancelSvg} />
-          <p>efefe</p>
+          <p className={styles.textDecoration}>
+            Вся информация идёт и закрытых источников МО, что является прямым
+            нарушением законодательства! Поэтому любая информация полученная с
+            помощью данного сайта является строго конфиденциальной.
+          </p>
         </div>
       ) : (
         ""
@@ -133,7 +168,10 @@ const AskContainer = () => {
           }}
         >
           <ImCancelCircle className={styles.cancelSvg} />
-          <p>efefe</p>
+          <p className={styles.textDecoration}>
+            В случае необходимости в получении дополнительных данных просим вас
+            написать на указанную ниже почту! <strong>wwdwdw82@gmail.com</strong>
+          </p>
         </div>
       ) : (
         ""
@@ -188,7 +226,7 @@ const AskContainer = () => {
             clickHandler(5);
           }}
         >
-          <p className={styles.AskItemText}>В каком виде приходят данные ?</p>
+          <p className={styles.AskItemText}>Как приходят данные ?</p>
           <Image alt="" width={30} height={30} src={writeSvg}></Image>
         </div>
         <div
