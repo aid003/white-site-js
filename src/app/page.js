@@ -40,9 +40,7 @@ export default function Home() {
       <div className={styles.textContainer}>
         <h1 className={styles.heading}>Добро пожаловать</h1>
         <p className={styles.text1p}>{textAreaField}</p>
-        <p className={styles.text2p}>
-          {textAreaField2}
-        </p>
+        <p className={styles.text2p}>{textAreaField2}</p>
       </div>
       <AskContainer></AskContainer>
       <div className={styles.mouthenContainer}>
@@ -60,6 +58,7 @@ export default function Home() {
       </div>
       <UserInfo></UserInfo>
       <p style={{ height: "300px" }}></p>
+      
     </div>
   );
 }
