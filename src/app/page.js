@@ -18,48 +18,52 @@ export default function Home() {
 
   const textAreaField2 =
     "Результатом поиска будет являться самая свежая информация о местонахождении человека. На текущий момент мы имеем доступ к базам МО, а также информацию повышенной конфиденциальности ! Ответы на часто задаваемый вопросы вы можете обнаружить здесь <FAQ>";
-  
+
   const searchHandler = () => {
     router.push("/search");
   };
 
   return (
-    <div className={styles.pageContainer}>
-      <div className={styles.searchButtonContainer}>
-        <Image
-          alt="hand"
-          width={350}
-          height={320}
-          src={handSvg}
-          className={styles.handIcon}
-        ></Image>
-        <div className={styles.searchButtonWrapper} onClick={searchHandler}>
-          <BiSearchAlt2 className={styles.searchIcon} />
-          <button className={styles.searchButton}>Найти человека</button>
+    <>
+      <head>
+        <meta name="yandex-verification" content="745e511fabc27008" />
+      </head>
+      <div className={styles.pageContainer}>
+        <div className={styles.searchButtonContainer}>
+          <Image
+            alt="hand"
+            width={350}
+            height={320}
+            src={handSvg}
+            className={styles.handIcon}
+          ></Image>
+          <div className={styles.searchButtonWrapper} onClick={searchHandler}>
+            <BiSearchAlt2 className={styles.searchIcon} />
+            <button className={styles.searchButton}>Найти человека</button>
+          </div>
         </div>
+        <div className={styles.textContainer}>
+          <h1 className={styles.heading}>Добро пожаловать</h1>
+          <p className={styles.text1p}>{textAreaField}</p>
+          <p className={styles.text2p}>{textAreaField2}</p>
+        </div>
+        <AskContainer></AskContainer>
+        <div className={styles.mouthenContainer}>
+          <Image alt="arrow" width={320} height={430} src={fastArrowSvg} />
+        </div>
+        <div className={styles.cloudContainer}>
+          <Image
+            width={1400}
+            height={1500}
+            alt=""
+            src={cloudSvg}
+            className={styles.cloudIcon}
+          ></Image>
+          <p className={styles.cloudText}>Правильно заполни информацию !</p>
+        </div>
+        <UserInfo></UserInfo>
+        <p style={{ height: "300px" }}></p>
       </div>
-      <div className={styles.textContainer}>
-        <h1 className={styles.heading}>Добро пожаловать</h1>
-        <p className={styles.text1p}>{textAreaField}</p>
-        <p className={styles.text2p}>{textAreaField2}</p>
-      </div>
-      <AskContainer></AskContainer>
-      <div className={styles.mouthenContainer}>
-        <Image alt="arrow" width={320} height={430} src={fastArrowSvg} />
-      </div>
-      <div className={styles.cloudContainer}>
-        <Image
-          width={1400}
-          height={1500}
-          alt=""
-          src={cloudSvg}
-          className={styles.cloudIcon}
-        ></Image>
-        <p className={styles.cloudText}>Правильно заполни информацию !</p>
-      </div>
-      <UserInfo></UserInfo>
-      <p style={{ height: "300px" }}></p>
-      
-    </div>
+    </>
   );
 }
