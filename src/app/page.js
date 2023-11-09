@@ -8,6 +8,7 @@ import cloudSvg from "../../public/ОБЛАчко 2.svg";
 import AskContainer from "../components/asks/AskContainer";
 import UserInfo from "../components/userInfo/UserInfo";
 import { useRouter } from "next/navigation";
+import Head from "next/head";
 
 export default function Home() {
   const router = useRouter();
