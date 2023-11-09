@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
       <head>
-        <meta name="yandex-verification" content="745e511fabc27008" />
+        <meta name="yandex-verification" content="bf325057bf823910" />
       </head>
       <div className={styles.pageContainer}>
         <div className={styles.searchButtonContainer}>
