@@ -43,8 +43,8 @@ export default function RootLayout({ children }) {
             webvisor: true,
           }}
         >
-          <div className={styles.layoutContainer}>{children}</div>
         </YandexMetricaProvider>
+          <div className={styles.layoutContainer}>{children}</div>
       </body>
     </html>
   );
