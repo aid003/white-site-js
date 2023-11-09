@@ -5,6 +5,7 @@ import HeaderDesktop from "../components/Header/HeaderDesktop";
 import Head from "next/head";
 import Script from "next/script";
 import Image from "next/image";
+import { YandexMetricaProvider } from "next-yandex-metrica";
 
 const inter = Inter({ subsets: ["latin"] });
 
