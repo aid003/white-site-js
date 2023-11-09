@@ -12,6 +12,7 @@
     "crypto": "^1.0.1",
     "locutus": "^2.0.16",
     "next": "latest",
+    "next-yandex-metrica": "^1.0.0",
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "^4.11.0",
