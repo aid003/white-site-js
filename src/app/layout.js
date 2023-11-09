@@ -30,6 +30,10 @@ export default function RootLayout({ children }) {
           sizes="16x16"
           href="/images/favicon-16x16.png"
         />
+        <meta
+          http-equiv="Content-Type"
+          content="text/html; charset=UTF-8"
+        ></meta>
       </Head>
       <body className={inter.className}>
         <HeaderDesktop></HeaderDesktop>
@@ -50,6 +54,7 @@ export default function RootLayout({ children }) {
               });`}
         </Script>
         <YandexMetrika />
+        Verification: 745e511fabc27008
       </body>
     </html>
   );
