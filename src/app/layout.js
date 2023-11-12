@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ru">
-      <Head>
+      <head>
         <link
           rel="icon"
           type="image/png"
@@ -34,8 +34,8 @@ export default function RootLayout({ children }) {
           sizes="16x16"
           href="/images/favicon-16x16.png"
         />
-        <meta name="yandex-verification" content="745e511fabc27008" />
-      </Head>
+        <meta name="yandex-verification" content="bf325057bf823910" />
+      </head>
       <body className={inter.className}>
         <HeaderDesktop></HeaderDesktop>
         <div className={styles.layoutContainer}>{children}</div>
