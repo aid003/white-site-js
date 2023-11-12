@@ -9,9 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   name: "yandex-verification",
-  content: "745e511fabc27008",
-  yandexVerification: "745e511fabc27008",
-  "yandex-verification": "745e511fabc27008",
+  content: "bf325057bf823910",
+  yandexVerification: "bf325057bf823910",
+  "yandex-verification": "bf325057bf823910",
   title: "Поиск людей",
   description:
     "Наша команда занимается поиском людей. В силу своих возможностей у нас инструменты позволяющие заниматься поиском людей на СВО. Да, мы не встретим человека лично, но точно будем знать о состоянии дел и здоровье человека путем анализа всей документации",
